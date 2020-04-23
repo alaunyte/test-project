@@ -11,13 +11,32 @@
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
     <script src="config.js"></script>
-    <script src="add.js"></script>
+    <script src="add.js" defer></script>
 </head>
 <body>
     <header class="wrapper">
         <h1>Add your property for sale!</h1>
         <p>Yes, you can sell where you live and get cash!</p>
     </header>
-   
+    <main class="addProperty wrapper">
+        <div class="notification nodisplay"></div>
+        <section>
+            <form name="addProperty">
+                <label>Img</label>
+                <input type="text" name="img" id="img" placeholder="https://tralialia.nice.photo.jpg">
+                <label>Price, EUR</label>
+                <input type="number" name="price" id="price" placeholder="30000">
+                <label>Description</label>
+                <textarea name="description" id="" cols="30" rows="10" placeholder="say something about your place.."></textarea>
+                <label>City</label>
+                <select id="city">
+                    <option value="vilnius">Vilnius</option>
+                    <option value="kaunas">Kaunas</option>
+                    <option value="klaipeda">Klaipeda</option>
+                </select>
+                <button type="submit">Add Property</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

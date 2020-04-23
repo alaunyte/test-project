@@ -35,7 +35,7 @@ form label{
     margin-top: 10px;
 }
 form button{
-    width: 100px;
+    width: 130px;
     padding: 10px;
     margin-top: 15px;
     border-radius: 5px;
@@ -84,3 +84,21 @@ form button:hover{
 .display {
 	display: block;
 }
+.addProperty form{
+    width: 100%;
+}
+.addProperty form input{
+    width: 100%;
+}
+.addProperty textarea{
+    width: 100%;
+    outline: none;
+    padding: 10px;
+}
+.addProperty select{
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+}
+

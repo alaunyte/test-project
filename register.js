@@ -24,6 +24,3 @@ document.forms.register.addEventListener("submit", (event) => {
     })
 })
 
-function showError() {
-	
-}
