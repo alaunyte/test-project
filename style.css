@@ -111,4 +111,13 @@ form button:hover{
     width: 300px;
     object-fit: contain;
 }
-
+.block{
+    margin: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    padding: 10px;
+    transition: 1s;
+}
+.block:hover{
+    box-shadow: 0 0 3px 1px #95956e;
+    transition: 0.5s;
+}

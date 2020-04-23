@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 
 
-const addProperty = (img, price, description, city) => {
+const addProperty = (img, price, city, description) => {
     const div = document.createElement("div");
     div.classList.add("block");
     const image = document.createElement("img");
@@ -20,5 +20,5 @@ const addProperty = (img, price, description, city) => {
 }
 
 firebase.firestore().collection("home").get().then((snapshot) => snapshot.docs.forEach((doc) => {
-    addProperty(doc.data().img, doc.data().price, doc.data().description, doc.data().city);
+    addProperty(doc.data().img, doc.data().price, doc.data().city, doc.data().description);
 }))
